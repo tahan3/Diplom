@@ -10,10 +10,16 @@ namespace UI
         [SerializeField] private Text descriptionText;
         [SerializeField] private Button button;
 
-        public void Init(string description, UnityAction yesButtonCallback)
+        public void Init(string description, UnityAction yesButtonCallback = null)
         {
             descriptionText.text = description;
-            button.onClick.AddListener(yesButtonCallback);
+
+            if (yesButtonCallback != null)
+            {
+                button.onClick.AddListener(yesButtonCallback);
+            }
+
+            button.onClick.AddListener(() => gameObject.SetActive(false));
         }
 
         private void OnDisable()

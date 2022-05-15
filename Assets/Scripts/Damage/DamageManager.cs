@@ -64,7 +64,7 @@ namespace Damage
 
         public void InitUpgrade()
         {
-            reloadDuration = Convert.ToSingle(PlayFabManager.Instance.playerStatistics.PlayersUpgrades[UpgradeType.Reload]);
+            reloadDuration = Convert.ToSingle(PlayFabManager.Instance.PlayerStatistics.PlayersUpgrades[UpgradeType.Reload]);
         }
     }
 }

@@ -11,7 +11,7 @@ namespace UI
 
         private void Awake()
         {
-            PlayFabManager.Instance.OnGetUserInventory += GetCurrency;
+            PlayFabManager.Instance.MoneyManager.OnGetUserInventory += GetCurrency;
         }
 
         private void GetCurrency(GetUserInventoryResult result)

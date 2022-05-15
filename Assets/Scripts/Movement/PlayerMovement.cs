@@ -60,7 +60,7 @@ namespace Movement
 
         public void InitUpgrade()
         {
-            moveSpeed = Convert.ToSingle(PlayFabManager.Instance.playerStatistics.PlayersUpgrades[UpgradeType.MoveSpeed]);
+            moveSpeed = Convert.ToSingle(PlayFabManager.Instance.PlayerStatistics.PlayersUpgrades[UpgradeType.MoveSpeed]);
         }
     }
 }

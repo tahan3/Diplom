@@ -37,7 +37,7 @@ namespace Damage
         
         public void InitUpgrade()
         {
-            maxHealth = PlayFabManager.Instance.playerStatistics.PlayersUpgrades[UpgradeType.HP];
+            maxHealth = PlayFabManager.Instance.PlayerStatistics.PlayersUpgrades[UpgradeType.HP];
 
             CurrentHealth = maxHealth;
         }

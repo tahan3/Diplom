@@ -32,13 +32,13 @@ namespace UI
                 DeleteItems();
             }
             
-            PlayFabManager.Instance.OnGetLeaderboard += GetLeaderBoardItems;
-            PlayFabManager.Instance.GetLeaderboard(leaderboardTypeType, 0, 20);
+            PlayFabManager.Instance.StatisticsManager.OnGetLeaderboard += GetLeaderBoardItems;
+            PlayFabManager.Instance.StatisticsManager.GetLeaderboard(leaderboardTypeType, 0, 20);
         }
 
         private void GetLeaderBoardItems(GetLeaderboardResult result)
         {
-            PlayFabManager.Instance.OnGetLeaderboard -= GetLeaderBoardItems;
+            PlayFabManager.Instance.StatisticsManager.OnGetLeaderboard -= GetLeaderBoardItems;
 
             foreach (var item in result.Leaderboard)
             {

@@ -77,8 +77,8 @@ namespace Damage
 
         public void InitUpgrade()
         {
-            damageValue = PlayFabManager.Instance.playerStatistics.PlayersUpgrades[UpgradeType.Damage];
-            moveSpeed = PlayFabManager.Instance.playerStatistics.PlayersUpgrades[UpgradeType.BulletSpeed];
+            damageValue = PlayFabManager.Instance.PlayerStatistics.PlayersUpgrades[UpgradeType.Damage];
+            moveSpeed = PlayFabManager.Instance.PlayerStatistics.PlayersUpgrades[UpgradeType.BulletSpeed];
         }
     }
 }

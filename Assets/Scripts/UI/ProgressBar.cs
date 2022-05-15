@@ -26,7 +26,6 @@ namespace UI
 
         public void Refill()
         {
-            gameObject.SetActive(false);
             progressArea.DOKill();
             progressArea.fillAmount = 0f;
         }

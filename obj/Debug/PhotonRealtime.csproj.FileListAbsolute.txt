@@ -296,3 +296,6 @@ C:\Users\tahan\Diplom\Temp\Bin\Debug\DOTweenEditor.xml
 C:\Users\tahan\Diplom\Temp\Bin\Debug\DOTween.xml
 C:\Users\tahan\Diplom\Temp\Bin\Debug\Newtonsoft.Json.dll
 C:\Users\tahan\Diplom\Temp\Bin\Debug\Newtonsoft.Json.xml
+C:\Users\tahan\Desktop\diplom\obj\Debug\PhotonRealtime.csprojResolveAssemblyReference.cache
+C:\Users\tahan\Desktop\diplom\obj\Debug\PhotonRealtime.dll
+C:\Users\tahan\Desktop\diplom\obj\Debug\PhotonRealtime.pdb

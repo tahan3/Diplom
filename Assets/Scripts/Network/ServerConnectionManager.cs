@@ -47,7 +47,7 @@ namespace Network
         {
             InLobbyStatus = true;
             
-            PhotonNetwork.LocalPlayer.NickName = PlayFabManager.Instance.playerStatistics.nickname;
+            PhotonNetwork.LocalPlayer.NickName = PlayFabManager.Instance.PlayerStatistics.nickname;
         }
 
         public bool JoinRoom(string roomName)

@@ -13,14 +13,18 @@ namespace UI
         [SerializeField] private DialogWindow dialogWindow;
 
         private readonly string desctiption = "Do you want to exit the game?";
+
+        private Button button;
         
         private void Awake()
         {
-            DialogWindow window = Instantiate(dialogWindow, transform.parent);
-            window.Init(desctiption, LeaveRoom);
-            window.gameObject.SetActive(false);
+            button = GetComponent<Button>();
+            button.onClick.AddListener(InitDialogButton);
+        }
 
-            GetComponent<Button>().onClick.AddListener(() => window.gameObject.SetActive(true));
+        private void InitDialogButton()
+        {
+            DialogWindowsManager.Instance.CreateDialogWindow(DialogWindowType.OptionalWindow, desctiption, LeaveRoom);
         }
     }
 }

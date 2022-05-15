@@ -8,9 +8,12 @@ public enum PanelType : int
     SettingsPanel
 }
 
-public enum PrefsNames : byte
+public enum PREFS_NAMES : byte
 {
-    firstLogin
+    FirstLogin,
+    MuteSoundName,
+    MuteMusicName,
+    MuteVibroName
 }
 
 public enum UpgradeType : byte
@@ -26,6 +29,12 @@ public enum UpgradeType : byte
 public enum CurrencyType : byte
 {
     GC
+}
+
+public enum DialogWindowType : byte
+{
+    WarningWindow,
+    OptionalWindow
 }
 
 public class PlayFabEnums

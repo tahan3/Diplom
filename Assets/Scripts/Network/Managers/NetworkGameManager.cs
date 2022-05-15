@@ -17,22 +17,18 @@ namespace Network.Managers
         [SerializeField] private MapsManager mapsManager;
         [SerializeField] private UIController uiController;
         [SerializeField] private NetworkUIManager uIManager;
+        [SerializeField] private CameraFollow cameraFollow;
         
         public GameObject playerPrefab;
 
         private PlayerManager playerManager;
 
-        private List<int> deadActors;
+        private List<int> deadActors = new List<int>();
         private readonly byte PlayerDiedEventCode = 1;
 
         private void OnEnable()
         {
             PhotonNetwork.AddCallbackTarget(this);
-        }
-
-        private void Awake()
-        {
-            deadActors = new List<int>();
         }
 
         private void Start()
@@ -50,11 +46,14 @@ namespace Network.Managers
                 .GetComponent<PlayerManager>();
 
             playerManager.Init(uiController, () => SetLose(PhotonNetwork.LocalPlayer.ActorNumber));
+
+            cameraFollow.enabled = true;
+            cameraFollow.Target = playerManager.transform;
         }
 
         private void SetWin()
         {
-            PlayFabManager.Instance.SendLeaderboard(PlayFabEnums.LeaderboardType.MMR, 1);
+            PlayFabManager.Instance.StatisticsManager.SendLeaderboard(PlayFabEnums.LeaderboardType.MMR, 1);
         }
 
         private void SetLose(int actorNumber)
@@ -66,7 +65,7 @@ namespace Network.Managers
 
         public override void OnPlayerLeftRoom(Photon.Realtime.Player newPlayer)
         {
-            SetLose(PhotonNetwork.LocalPlayer.ActorNumber);
+            SetLose(newPlayer.ActorNumber);
         }
         
         public void OnEvent(EventData photonEvent)

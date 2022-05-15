@@ -10,6 +10,7 @@ namespace Network
     public class PlayersWaiter : MonoBehaviourPunCallbacks
     {
         [SerializeField] private List<GameObject> enableOnAllPlayersLoaded;
+        [SerializeField] private List<GameObject> destroyOnAllPlayersLoaded;
 
         private Text text;
 
@@ -18,6 +19,8 @@ namespace Network
             text = GetComponent<Text>();
 
             SetCurrentPlayersText();
+
+            OnPlayerEnteredRoom(PhotonNetwork.LocalPlayer);
         }
 
         public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
@@ -45,6 +48,11 @@ namespace Network
             foreach (var item in enableOnAllPlayersLoaded)
             {
                 item.SetActive(true);
+            }
+
+            foreach (var item in destroyOnAllPlayersLoaded)
+            {
+                Destroy(item);
             }
             
             Destroy(gameObject);

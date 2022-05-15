@@ -13,7 +13,7 @@ public class UILoginManager : MonoBehaviour
     
     private void Start()
     {
-        if (PlayerPrefs.GetInt(PrefsNames.firstLogin.ToString(), 0).Equals(1))
+        if (PlayerPrefs.GetInt(PREFS_NAMES.FirstLogin.ToString(), 0).Equals(1))
         {
             OnLoggin?.Invoke();
         }
@@ -28,11 +28,11 @@ public class UILoginManager : MonoBehaviour
         }
         else
         {
-            SetDesription("Nickname must be more than 2 characters.");
+            SetDescription("Nickname must be more than 2 characters.");
         }
     }
 
-    private void SetDesription(string descriptionText)
+    private void SetDescription(string descriptionText)
     {
         messageText.gameObject.SetActive(true);
         messageText.text = descriptionText;
@@ -42,7 +42,7 @@ public class UILoginManager : MonoBehaviour
     {
         PlayFabManager.Instance.OnNicknameChange -= OnSetNickname;
         
-        PlayerPrefs.SetInt(PrefsNames.firstLogin.ToString(), 1);
+        PlayerPrefs.SetInt(PREFS_NAMES.FirstLogin.ToString(), 1);
             
         OnLoggin?.Invoke();
     }
