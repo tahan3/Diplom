@@ -9,6 +9,8 @@ namespace Managers
     {
         public Action<GetUserInventoryResult> OnGetUserInventory;
 
+        public int CurrentMoney { get; private set; }
+        
         public void AddVirtualCurrency(CurrencyType currencyType, int value)
         {
             var request = new AddUserVirtualCurrencyRequest()
@@ -43,7 +45,7 @@ namespace Managers
 
         private void OnGetUserInventorySuccess(GetUserInventoryResult result)
         {
-            //playerStatistics.goldCoins = result.VirtualCurrency[CurrencyType.GC.ToString()];
+            CurrentMoney = result.VirtualCurrency[CurrencyType.GC.ToString()];
         
             OnGetUserInventory?.Invoke(result);
         }

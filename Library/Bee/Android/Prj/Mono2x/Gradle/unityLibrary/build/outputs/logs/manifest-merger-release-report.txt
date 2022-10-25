@@ -1,30 +1,30 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-33:12
 	package
 		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:70-98
 		INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-33:12
 		INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:99-145
 	android:versionCode
 		INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-33:12
 		INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-23:17
+ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-24:17
 	android:extractNativeLibs
 		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:16-48
 activity#com.unity3d.player.UnityPlayerActivity
@@ -96,9 +96,9 @@ ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\u
 	android:name
 		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-43
 receiver#com.unity.androidnotifications.UnityNotificationManager
-ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-112
+ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-113
 	android:exported
-		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:86-109
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:86-110
 	android:name
 		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:15-85
 receiver#com.unity.androidnotifications.UnityNotificationRestartOnBootReceiver
@@ -106,7 +106,7 @@ ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\u
 	android:enabled
 		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:100-123
 	android:exported
-		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:124-147
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:124-148
 	android:name
 		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:15-99
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
@@ -115,42 +115,52 @@ action#android.intent.action.BOOT_COMPLETED
 ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:9-71
 	android:name
 		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:17-68
+meta-data#reschedule_notifications_on_restart
+ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:5-90
+	android:value
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:67-87
+	android:name
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:16-66
 uses-feature#0x00030000
-ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:3-52
+ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:3-52
 	android:glEsVersion
-		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:17-49
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:17-49
 uses-feature#android.hardware.vulkan.version
-ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:3-91
+ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:3-91
 	android:required
-		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:64-88
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:64-88
 	android:name
-		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:17-63
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:17-63
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:3-65
+ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:3-65
 	android:name
-		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:20-62
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:20-62
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:3-77
+ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:3-77
 	android:name
-		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:20-74
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:20-74
 uses-feature#android.hardware.touchscreen
-ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:3-88
+ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:3-88
 	android:required
-		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:61-85
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:61-85
 	android:name
-		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:17-60
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:17-60
 uses-feature#android.hardware.touchscreen.multitouch
-ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:3-99
+ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:3-99
 	android:required
-		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:72-96
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:72-96
 	android:name
-		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:17-71
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:17-71
 uses-feature#android.hardware.touchscreen.multitouch.distinct
-ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:3-108
+ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:3-108
 	android:required
-		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:81-105
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:81-105
 	android:name
-		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:17-80
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:17-80
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:32:3-79
+	android:name
+		ADDED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:32:20-76
 uses-sdk
 INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\tahan\Desktop\diplom\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml

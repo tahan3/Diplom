@@ -12,7 +12,7 @@ public class CameraLookAt : MonoBehaviour
         {
             if (Camera.main != null)
             {
-                cameraTransform = UnityEngine.Camera.main.transform;
+                cameraTransform = Camera.main.transform;
             }
         }
     }

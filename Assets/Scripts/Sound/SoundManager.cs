@@ -24,7 +24,7 @@ public class SoundManager : MonoBehaviour
 
         #endregion
 
-        Play(SoundType.MainTheme);
+        //Play(SoundType.MainTheme);
 
         MuteCategory(SoundCategory.Music,Convert.ToBoolean(PlayerPrefs.GetInt(PREFS_NAMES.MuteSoundName.ToString(), 0)));
         MuteCategory(SoundCategory.SFX,Convert.ToBoolean(PlayerPrefs.GetInt(PREFS_NAMES.MuteMusicName.ToString(), 0)));

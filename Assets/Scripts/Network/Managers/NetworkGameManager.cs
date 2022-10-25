@@ -24,9 +24,8 @@ namespace Network.Managers
         private PlayerManager playerManager;
 
         private List<int> deadActors = new List<int>();
-        private readonly byte PlayerDiedEventCode = 1;
 
-        private void OnEnable()
+        public override void OnEnable()
         {
             PhotonNetwork.AddCallbackTarget(this);
         }
@@ -60,7 +59,7 @@ namespace Network.Managers
         {
             object content = actorNumber;
             RaiseEventOptions raiseEventOptions = new RaiseEventOptions { Receivers = ReceiverGroup.All };
-            PhotonNetwork.RaiseEvent(PlayerDiedEventCode, content, raiseEventOptions, SendOptions.SendReliable);
+            PhotonNetwork.RaiseEvent((byte)EventCodes.PlayerDiedEventCode, content, raiseEventOptions, SendOptions.SendReliable);
         }
 
         public override void OnPlayerLeftRoom(Photon.Realtime.Player newPlayer)
@@ -72,7 +71,7 @@ namespace Network.Managers
         {
             byte eventCode = photonEvent.Code;
 
-            if (eventCode == PlayerDiedEventCode)
+            if (eventCode == (byte)EventCodes.PlayerDiedEventCode)
             {
                 int deadActorNumber = (int) photonEvent.CustomData;
                 int roomMaxPlayers = PhotonNetwork.CurrentRoom.MaxPlayers;
@@ -84,18 +83,20 @@ namespace Network.Managers
                 
                 if (deadActorNumber == currentActorNumber)
                 {
+                    PlayFabManager.Instance.MoneyManager.AddVirtualCurrency(CurrencyType.GC, 10);
                     uIManager.SetGameOver(false);
                 }
 
                 if (deadActors.Count == roomMaxPlayers - 1 && !deadActors.Contains(currentActorNumber))
                 {
+                    PlayFabManager.Instance.MoneyManager.AddVirtualCurrency(CurrencyType.GC, 100);
                     uIManager.SetGameOver(true);
                     SetWin();
                 }
             }
         }
 
-        private void OnDisable()
+        public override void OnDisable()
         {
             PhotonNetwork.RemoveCallbackTarget(this);
         }

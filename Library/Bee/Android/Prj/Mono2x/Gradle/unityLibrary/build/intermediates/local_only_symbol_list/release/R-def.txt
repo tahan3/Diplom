@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+drawable icon_0
 style BaseUnityTheme
 style UnityThemeSelector
 style UnityThemeSelector.Translucent

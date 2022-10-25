@@ -1,6 +1,8 @@
 using System;
+using System.Collections;
 using PlayFab;
 using PlayFab.ClientModels;
+using UI;
 using UnityEngine;
 using SystemInfo = UnityEngine.Device.SystemInfo;
 
@@ -14,12 +16,12 @@ namespace Managers
         public void Login()
         {
             var request = new LoginWithCustomIDRequest()
-            {
-                CustomId = SystemInfo.deviceUniqueIdentifier,
-                CreateAccount = true,
-            };
-        
-            PlayFabClientAPI.LoginWithCustomID(request, OnSuccessLogin, OnError);
+                {
+                    CustomId = SystemInfo.deviceUniqueIdentifier,
+                    CreateAccount = true,
+                };
+
+                PlayFabClientAPI.LoginWithCustomID(request, OnSuccessLogin, OnError);
         }
 
         private void OnSuccessLogin(LoginResult result)
@@ -33,12 +35,24 @@ namespace Managers
         private void OnGetAccountInfoResult(GetAccountInfoResult result)
         {
             OnGetAccountInfoSuccess?.Invoke(result);
-            //playerStatistics.nickname = result.AccountInfo.TitleInfo.DisplayName;
         }
         
         private void OnError(PlayFabError error)
         {
             Debug.LogError(error.GenerateErrorReport());
+        }
+
+        public IEnumerator ReloginLoop(float delay)
+        {
+            while (!InternetWorker.InternetConnectionCheck())
+            {
+                yield return new WaitForSecondsRealtime(delay);
+
+                if (InternetWorker.InternetConnectionCheck())
+                {
+                    Login();
+                }
+            }
         }
     }
 }

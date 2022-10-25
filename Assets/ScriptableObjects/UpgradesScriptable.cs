@@ -13,14 +13,14 @@ namespace ScriptableObjects
         public float addPerLevel;
         public int startCost;
 
-        public int CalculateLvl()
+        public int CalculateLvl(float defaultValue, float current)
         {
-            return 1;
+            return (int)((current - defaultValue) / addPerLevel) + 1;
         }
 
-        public int CalculateCost()
+        public int CalculateCost(int currentLvl)
         {
-            return 1;
+            return currentLvl * startCost;
         }
     }
     

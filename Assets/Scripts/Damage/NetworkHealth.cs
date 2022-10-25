@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Damage
 {
-    public class NetworkHealth : Health, IPunObservable, IUpgrade
+    public class NetworkHealth : Health, IUpgrade, IPunObservable
     {
         [SerializeField] private PhotonView photonView;
 
@@ -13,9 +13,43 @@ namespace Damage
             if (photonView.IsMine)
             {
                 InitUpgrade();
+                photonView.RPC("InitHealth", RpcTarget.AllBuffered, CurrentHealth);
             }
             
             base.Awake();
+        }
+
+        public override void GetDamage(float damage)
+        {
+            if (photonView.IsMine)
+            {
+                photonView.RPC("GetDamageRPC", RpcTarget.All, damage);
+            }
+        }
+
+        [PunRPC]
+        public void InitHealth(float value)
+        {
+            CurrentHealth = value;
+            maxHealth = value;
+        }
+        
+        [PunRPC]
+        public void GetDamageRPC(float damage)
+        {
+            base.GetDamage(damage);
+        }
+
+        private void FixedUpdate()
+        {
+            progressBar.Set(CurrentHealth / maxHealth);
+        }
+
+        public void InitUpgrade()
+        {
+            maxHealth = PlayFabManager.Instance.PlayerStatistics.PlayersUpgrades[UpgradeType.HP];
+
+            CurrentHealth = maxHealth;
         }
 
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -26,20 +60,10 @@ namespace Damage
             }
             else
             {
-                float health = (float) stream.ReceiveNext();
+                CurrentHealth = (float) stream.ReceiveNext();
                 
-                if (Math.Abs(CurrentHealth - health) > 0f)
-                {
-                    GetDamage(CurrentHealth - health);
-                }
+                progressBar.Set(CurrentHealth / maxHealth);
             }
-        }
-        
-        public void InitUpgrade()
-        {
-            maxHealth = PlayFabManager.Instance.PlayerStatistics.PlayersUpgrades[UpgradeType.HP];
-
-            CurrentHealth = maxHealth;
         }
     }
 }

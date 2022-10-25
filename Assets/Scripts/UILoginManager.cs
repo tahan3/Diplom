@@ -1,3 +1,4 @@
+using UI;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -23,8 +24,16 @@ public class UILoginManager : MonoBehaviour
     {
         if (inputField.text.Length >= minNickNameLenght)
         {
-            PlayFabManager.Instance.OnNicknameChange += OnSetNickname;
-            PlayFabManager.Instance.UpdatePlayersName(inputField.text);
+            if (InternetWorker.InternetConnectionCheck())
+            {
+                PlayFabManager.Instance.OnNicknameChange += OnSetNickname;
+                PlayFabManager.Instance.UpdatePlayersName(inputField.text);
+            }
+            else
+            {
+                DialogWindowsManager.Instance.CreateDialogWindow(DialogWindowType.WarningWindow,
+                    "No Internet Connection!");
+            }
         }
         else
         {

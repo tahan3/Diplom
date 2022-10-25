@@ -43,10 +43,12 @@
   <ItemGroup>
      <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+     <Compile Include="Assets\Scripts\PowerUps\RegenerationPowerUp.cs" />
      <Compile Include="Assets\Scripts\UI\MultiplayerMenuItem.cs" />
      <Compile Include="Assets\Scripts\Damage\ICurable.cs" />
      <Compile Include="Assets\Scripts\Movement\IMoveHandler.cs" />
      <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
+     <Compile Include="Assets\Scripts\Notifications\NotificationsData.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraLookAt.cs" />
@@ -60,6 +62,7 @@
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
      <Compile Include="Assets\Scripts\UI\DialogWindowsManager.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+     <Compile Include="Assets\Scripts\Notifications\NotificationItem.cs" />
      <Compile Include="Assets\Scripts\Network\PlayersWaiter.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
@@ -75,6 +78,8 @@
      <Compile Include="Assets\Scripts\Movement\IMovement.cs" />
      <Compile Include="Assets\Scripts\Managers\MoneyManager.cs" />
      <Compile Include="Assets\Scripts\UI\UIRoomsHandler.cs" />
+     <Compile Include="Assets\Scripts\UI\GameStartWindow.cs" />
+     <Compile Include="Assets\Scripts\PowerUps\HastePowerUp.cs" />
      <Compile Include="Assets\Scripts\Settings\NicknameChanger.cs" />
      <Compile Include="Assets\Scripts\TYPE_ENUMS.cs" />
      <Compile Include="Assets\Scripts\UI\UILeaderboardSpawner.cs" />
@@ -84,12 +89,15 @@
      <Compile Include="Assets\Scripts\UI\AlivePlayersDisplayer.cs" />
      <Compile Include="Assets\Scripts\Damage\IGetDamager.cs" />
      <Compile Include="Assets\FarlandSkies\Demo\Scripts\Player\SmoothMouseLook.cs" />
+     <Compile Include="Assets\Scripts\PowerUps\DoubleDamagePowerUp.cs" />
+     <Compile Include="Assets\Scripts\Network\NetworkNicknameView.cs" />
      <Compile Include="Assets\Scripts\UI\UIMoneyStatus.cs" />
      <Compile Include="Assets\Scripts\Network\MultiplayerMenu.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
      <Compile Include="Assets\Scripts\UI\MenuItem.cs" />
      <Compile Include="Assets\Scripts\Maps\GameMap.cs" />
      <Compile Include="Assets\Scripts\Damage\DamageManager.cs" />
+     <Compile Include="Assets\Scripts\UI\InternetMenuItem.cs" />
      <Compile Include="Assets\Scripts\Damage\AShooter.cs" />
      <Compile Include="Assets\Scripts\PlayFabManager.cs" />
      <Compile Include="Assets\Scripts\Managers\LoginManager.cs" />
@@ -108,6 +116,7 @@
      <Compile Include="Assets\Scripts\Managers\UpgradesManager.cs" />
      <Compile Include="Assets\Scripts\Movement\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Movement\NetworkPlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Notifications\NotificationHandler.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
      <Compile Include="Assets\Scripts\Network\Managers\NetworkGameManager.cs" />
      <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />

@@ -48,7 +48,7 @@ namespace UI
                 currentItems.Add(leaderboardItem);
             }
 
-            itemsParent.sizeDelta = new Vector2(itemsParent.sizeDelta.x, itemHeight * currentItems.Count);
+            itemsParent.sizeDelta = new Vector2(itemsParent.sizeDelta.x, itemHeight * (currentItems.Count + 1));
         }
         
         private void DeleteItems()

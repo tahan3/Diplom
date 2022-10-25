@@ -14,18 +14,18 @@ namespace Damage
 
         protected float maxHealth;
 
-        public float CurrentHealth { get; protected set; }
+        public float CurrentHealth;
 
         protected void Awake()
         {
             progressBar.Set(1f);
         }
 
-        public void GetDamage(float damage)
+        public virtual void GetDamage(float damage)
         {
             float currentFill = CurrentHealth / maxHealth;
 
-            progressBar.Fill(currentFill, currentFill - damage / 100f, 0.5f);
+            progressBar.Set(currentFill - damage / 100f);
             CurrentHealth -= damage;
 
             if (CurrentHealth <= 0f)

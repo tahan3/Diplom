@@ -1,5 +1,7 @@
 using System;
+using ExitGames.Client.Photon;
 using Photon.Pun;
+using Photon.Realtime;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,8 +16,16 @@ namespace Player
         {
             if (photonView.IsMine)
             {
-                nicknameText.text = PhotonNetwork.LocalPlayer.NickName;
+                photonView.Owner.NickName = PlayFabManager.Instance.PlayerStatistics.nickname;
+                nicknameText.text = photonView.Owner.NickName;
+                photonView.RPC("SetNicknameRPC", RpcTarget.AllBuffered, photonView.Owner.NickName);
             }
+        }
+
+        [PunRPC]
+        public void SetNicknameRPC(string nickname)
+        {
+            nicknameText.text = nickname;
         }
     }
 }

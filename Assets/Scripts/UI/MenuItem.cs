@@ -14,13 +14,13 @@ namespace UI
         {
             button.onClick.AddListener(() =>
             {
-                callback?.Invoke();
-                Show();
+                Show(callback);
             });
         }
 
-        protected virtual void Show()
+        protected virtual void Show(Action callback = null)
         {
+            callback?.Invoke();
             panel.SetActive(true);
         }
         

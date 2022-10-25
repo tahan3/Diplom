@@ -1,4 +1,5 @@
 com.unity3d.player
+drawable icon_0
 style BaseUnityTheme
 style UnityThemeSelector
 style UnityThemeSelector_Translucent

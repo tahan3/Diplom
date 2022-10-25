@@ -2,11 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Managers;
+using Network;
 using Newtonsoft.Json;
 using Player;
 using UnityEngine;
 using PlayFab;
 using PlayFab.ClientModels;
+using UI;
 
 public class PlayFabManager : MonoBehaviour
 {
@@ -37,15 +39,25 @@ public class PlayFabManager : MonoBehaviour
         #endregion
 
         InitManagers();
-        
-        PlayerStatistics = new PlayerStatistics();
+
+        PlayerStatistics = new PlayerStatistics(UpgradesManager.GetDefaultUpgrades());
 
         LoginManager.OnLogin += MoneyManager.GetVirtualCurrency;
         LoginManager.OnLogin += UpgradesManager.GetPlayerUpgrades;
+        LoginManager.OnLogin += ServerConnectionManager.Instance.Init;
+        LoginManager.OnGetAccountInfoSuccess += GetNicknameFirstLogin;
 
         UpgradesManager.OnGetUserUpgrades += GetUpgradesFirstLogin;
 
-        LoginManager.Login();
+        if (InternetWorker.InternetConnectionCheck())
+        {
+            LoginManager.Login();
+        }
+        else
+        {
+            DialogWindowsManager.Instance.CreateDialogWindow(DialogWindowType.WarningWindow, "No Internet connection!");
+            StartCoroutine(LoginManager.ReloginLoop(2.5f));
+        }
     }
 
     private void InitManagers()
@@ -77,7 +89,7 @@ public class PlayFabManager : MonoBehaviour
         
         OnNicknameChange?.Invoke();
     }
-    
+
     private void GetUpgradesFirstLogin(GetUserDataResult result)
     {
         UpgradesManager.OnGetUserUpgrades -= GetUpgradesFirstLogin;
@@ -92,5 +104,10 @@ public class PlayFabManager : MonoBehaviour
         {
             UpgradesManager.SavePlayerUpgrades(PlayerStatistics.PlayersUpgrades);
         }
+    }
+
+    private void GetNicknameFirstLogin(GetAccountInfoResult result)
+    {
+        PlayerStatistics.nickname = result.AccountInfo.TitleInfo.DisplayName;
     }
 }

@@ -14,7 +14,10 @@ public enum SoundCategory : byte
 [Serializable]
 public enum SoundType : byte
 {
-    MainTheme
+    MainTheme,
+    Explosion,
+    Win,
+    Lose
 }
 
 [Serializable]

@@ -1,4 +1,4 @@
-#Wed May 11 22:34:21 MSK 2022
+#Mon Jun 27 14:38:26 MSK 2022
 base.0=C\:\\Users\\tahan\\Desktop\\diplom\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

@@ -14,20 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - type: 0
-    maxValue: 20
+    maxLvl: 50
     name: Health Points
+    addPerLevel: 10
+    startCost: 20
   - type: 1
-    maxValue: 20
+    maxLvl: 50
     name: Damage
+    addPerLevel: 5
+    startCost: 20
   - type: 2
-    maxValue: 20
+    maxLvl: 15
     name: Reload Duration
+    addPerLevel: 0.1
+    startCost: 20
   - type: 3
-    maxValue: 20
+    maxLvl: 50
     name: Move Speed
+    addPerLevel: 0.1
+    startCost: 20
   - type: 4
-    maxValue: 20
+    maxLvl: 50
     name: Bullet Speed
-  - type: 5
-    maxValue: 20
-    name: Shield Health Points
+    addPerLevel: 0.1
+    startCost: 20

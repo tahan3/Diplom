@@ -7,7 +7,7 @@ namespace Movement
     public class PlayerMovement : MonoBehaviour, IInput, IMoveHandler, IRotateHandler, IMovement, IUpgrade
     {
         public Joystick joystick;
-        protected float moveSpeed;
+        public float moveSpeed;
 
         private Rigidbody rigidbody;
 

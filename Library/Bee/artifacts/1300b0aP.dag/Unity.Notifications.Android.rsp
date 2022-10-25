@@ -303,14 +303,14 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.WindModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.XRModule.dll"
 -r:"Library/Bee/artifacts/1300b0aP.dag/UnityEngine.UI.ref.dll"
-"Library/PackageCache/com.unity.mobile.notifications@2.0.0/Runtime/Android/AndroidNotification.cs"
-"Library/PackageCache/com.unity.mobile.notifications@2.0.0/Runtime/Android/AndroidNotificationCallback.cs"
-"Library/PackageCache/com.unity.mobile.notifications@2.0.0/Runtime/Android/AndroidNotificationCenter.cs"
-"Library/PackageCache/com.unity.mobile.notifications@2.0.0/Runtime/Android/AndroidNotificationChannel.cs"
-"Library/PackageCache/com.unity.mobile.notifications@2.0.0/Runtime/Android/AndroidNotificationExtensions.cs"
-"Library/PackageCache/com.unity.mobile.notifications@2.0.0/Runtime/Android/AndroidNotificationIntentData.cs"
-"Library/PackageCache/com.unity.mobile.notifications@2.0.0/Runtime/Android/AndroidReceivedNotificationMainThreadDispatcher.cs"
-"Library/PackageCache/com.unity.mobile.notifications@2.0.0/Runtime/Android/AssemblyInfo.cs"
+"Library/PackageCache/com.unity.mobile.notifications@2.0.2/Runtime/Android/AndroidNotification.cs"
+"Library/PackageCache/com.unity.mobile.notifications@2.0.2/Runtime/Android/AndroidNotificationCallback.cs"
+"Library/PackageCache/com.unity.mobile.notifications@2.0.2/Runtime/Android/AndroidNotificationCenter.cs"
+"Library/PackageCache/com.unity.mobile.notifications@2.0.2/Runtime/Android/AndroidNotificationChannel.cs"
+"Library/PackageCache/com.unity.mobile.notifications@2.0.2/Runtime/Android/AndroidNotificationExtensions.cs"
+"Library/PackageCache/com.unity.mobile.notifications@2.0.2/Runtime/Android/AndroidNotificationIntentData.cs"
+"Library/PackageCache/com.unity.mobile.notifications@2.0.2/Runtime/Android/AndroidReceivedNotificationMainThreadDispatcher.cs"
+"Library/PackageCache/com.unity.mobile.notifications@2.0.2/Runtime/Android/AssemblyInfo.cs"
 -langversion:9.0
 
 /deterministic

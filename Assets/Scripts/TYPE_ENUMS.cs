@@ -16,6 +16,13 @@ public enum PREFS_NAMES : byte
     MuteVibroName
 }
 
+public enum EventCodes : byte
+{
+    PlayerDiedEventCode = 1,
+    NicknameEventCode,
+    HealthChangeEventCode
+}
+
 public enum UpgradeType : byte
 {
     HP,//

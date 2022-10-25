@@ -47,7 +47,7 @@ namespace Managers
         public void VibrateMute()
         {
             currentVibroStatus = !currentVibroStatus;
-            SetToggle(VibroManager.status, vibroToggle);
+            SetToggle(currentVibroStatus, vibroToggle);
         }
 
         private void SetToggle(bool status, Image image)

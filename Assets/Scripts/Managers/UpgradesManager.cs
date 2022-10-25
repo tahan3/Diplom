@@ -48,5 +48,17 @@ namespace Managers
         {
             Debug.LogError(error.GenerateErrorReport());
         }
+        
+        public Dictionary<UpgradeType, float> GetDefaultUpgrades()
+        {
+            return new Dictionary<UpgradeType, float>()
+            {
+                {UpgradeType.HP, 100},
+                {UpgradeType.Damage, 5},
+                {UpgradeType.Reload, 2},
+                {UpgradeType.MoveSpeed, 5},
+                {UpgradeType.BulletSpeed, 5},
+            };
+        }
     }
 }

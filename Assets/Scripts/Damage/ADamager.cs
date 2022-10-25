@@ -7,7 +7,7 @@ namespace Damage
 {
     public abstract class ADamager : MonoBehaviour, ISetDamager, IMovement
     {
-        [SerializeField] protected float damageValue;
+        [SerializeField] public float damageValue;
         [SerializeField] protected float moveSpeed;
 
         public Action OnTrigger;

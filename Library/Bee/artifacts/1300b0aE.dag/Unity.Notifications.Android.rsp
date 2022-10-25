@@ -340,14 +340,14 @@
 -r:"C:/Users/tahan/Desktop/diplom/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
-"Library/PackageCache/com.unity.mobile.notifications@2.0.0/Runtime/Android/AndroidNotification.cs"
-"Library/PackageCache/com.unity.mobile.notifications@2.0.0/Runtime/Android/AndroidNotificationCallback.cs"
-"Library/PackageCache/com.unity.mobile.notifications@2.0.0/Runtime/Android/AndroidNotificationCenter.cs"
-"Library/PackageCache/com.unity.mobile.notifications@2.0.0/Runtime/Android/AndroidNotificationChannel.cs"
-"Library/PackageCache/com.unity.mobile.notifications@2.0.0/Runtime/Android/AndroidNotificationExtensions.cs"
-"Library/PackageCache/com.unity.mobile.notifications@2.0.0/Runtime/Android/AndroidNotificationIntentData.cs"
-"Library/PackageCache/com.unity.mobile.notifications@2.0.0/Runtime/Android/AndroidReceivedNotificationMainThreadDispatcher.cs"
-"Library/PackageCache/com.unity.mobile.notifications@2.0.0/Runtime/Android/AssemblyInfo.cs"
+"Library/PackageCache/com.unity.mobile.notifications@2.0.2/Runtime/Android/AndroidNotification.cs"
+"Library/PackageCache/com.unity.mobile.notifications@2.0.2/Runtime/Android/AndroidNotificationCallback.cs"
+"Library/PackageCache/com.unity.mobile.notifications@2.0.2/Runtime/Android/AndroidNotificationCenter.cs"
+"Library/PackageCache/com.unity.mobile.notifications@2.0.2/Runtime/Android/AndroidNotificationChannel.cs"
+"Library/PackageCache/com.unity.mobile.notifications@2.0.2/Runtime/Android/AndroidNotificationExtensions.cs"
+"Library/PackageCache/com.unity.mobile.notifications@2.0.2/Runtime/Android/AndroidNotificationIntentData.cs"
+"Library/PackageCache/com.unity.mobile.notifications@2.0.2/Runtime/Android/AndroidReceivedNotificationMainThreadDispatcher.cs"
+"Library/PackageCache/com.unity.mobile.notifications@2.0.2/Runtime/Android/AssemblyInfo.cs"
 -langversion:9.0
 
 /deterministic

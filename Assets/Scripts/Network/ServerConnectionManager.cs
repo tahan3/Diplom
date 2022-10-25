@@ -34,10 +34,13 @@ namespace Network
         private void Start()
         {
             InLobbyStatus = false;
-        
-            PhotonNetwork.ConnectUsingSettings();
         }
 
+        public void Init()
+        {
+            PhotonNetwork.ConnectUsingSettings();
+        }
+        
         public override void OnConnectedToMaster()
         {
             PhotonNetwork.JoinLobby(typedLobby);
